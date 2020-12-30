@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function Sp() {
     return(
         <>
-            <motion.div animate={{ x: 0 }}
+            <motion.div animate={{ opacity: 1 }}
              transition={{ duration: 2 }}
              className="kb-sp">
             <div class="wrapper">

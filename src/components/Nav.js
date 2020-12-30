@@ -14,8 +14,9 @@ function Nav() {
     return( 
         <>
             <nav class="kb-navbar">
-                <h3 class="kb-logo"><Link className='kb-link' to='/'>Karthik HK</Link></h3>
-                <p class="kb-menu" onClick={() => setIsOpen(!isOpen)}>M E N U</p>
+                {/* TODO : TAKE CARE OF LOGO COLOR CHANGING */}
+                <h3 class="kb-logo" style={{ color: isOpen ? "white" : "black" }}><Link className='kb-link' to='/'>Karthik HK</Link></h3>
+                <p class="kb-menu" onClick={() => setIsOpen(!isOpen)}>{ isOpen ? "C L O S E" : "M E N U"}</p>
             </nav>
             <motion.ul 
             animate={isOpen ? "open" : "closed"}

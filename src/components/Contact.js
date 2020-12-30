@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function Contact() {
     return(
         <>
-            <motion.div animate={{ x: 0 }}
+            <motion.div animate={{ opacity: 1 }}
              transition={{ duration: 1 }}
              className="kb-contact">
             <div class="wrapper">

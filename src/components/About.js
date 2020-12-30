@@ -7,7 +7,7 @@ function About() {
         <>
              {/* <section className="kb-about" id="about"> */}
              <motion.div
-             animate={{ x: 0 }}
+             animate={{ opacity: 1 }}
              transition={{ duration: 2 }}
              className="kb-about">
                  <div className="wrapper">
