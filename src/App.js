@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Sp from './components/Sp';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './style.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
+      {/* <Footer /> */}
     </Router>
   );
 }

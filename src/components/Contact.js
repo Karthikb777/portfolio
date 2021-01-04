@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function Contact() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+
     return(
         <>
             <motion.div initial={{ x: '100vw' }}
@@ -134,6 +140,15 @@ function Contact() {
                 <input type="submit" value="SUBMIT" />
             </motion.form>
             </div>
+            <div className="kb-social-links">
+                <p>Social links</p>
+            <ul className="kb-social">
+                <li classname="kb-icon"><a target="_blank" rel="noreferrer" className="kb-link" href="https://github.com/Karthikb777">GITHUB</a></li>
+                <li classname="kb-icon"><a target="_blank" rel="noreferrer" className="kb-link" href="https://www.linkedin.com/in/karthik-hk">LINKEDIN</a></li>
+                <li classname="kb-icon"><a target="_blank" rel="noreferrer" className="kb-link" href="https://www.instagram.com/karthikbaraati/">INSTAGRAM</a></li>
+            </ul>
+            </div>
+            
             </div>
             </motion.div>
         </>

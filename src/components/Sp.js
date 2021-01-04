@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
     Link
@@ -6,6 +6,11 @@ import {
 import img1 from './img/covid19karLightScCropped.png';
 
 function Sp() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+
     return(
         <>
             <motion.div initial={{ x: '100vw' }}
@@ -56,7 +61,7 @@ function Sp() {
                     animate={{opacity: 1}}
                     transition={{delay:1.7}}
                     class="kb-skills-skill">
-                        <i class="devicon-nodejs-plain-wordmark kb-colored"></i>
+                        <i class="devicon-nodejs-plain kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
@@ -105,7 +110,7 @@ function Sp() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.4 }}
-                class="kb-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, repudiandae mollitia dolorum, velit blanditiis iure dicta fugiat nemo ut corporis ipsum ipsa harum perspiciatis vitae atque laudantium? Impedit, ab quos.</motion.p>
+                class="kb-content-center">My specialization is Full Stack Development. I use HTML5, CSS3, Javascript, React, Python and Django the most and I'm capable of developing production ready code. I have learnt and used the other technologies like Nodejs and express for server side in small Projects, and I have also worked in Golang and Flutter.</motion.p>
                 {/* <hr /> */}
                 <motion.h3
                 initial={{ opacity: 0, y: 20 }}
@@ -120,14 +125,19 @@ function Sp() {
                         <img className="kb-img img1" src={img1} alt="covid19karnataka"></img>
                         <div className="project1">
                             <p class="kb-header-small-non-center">COVID19KARNATAKA</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi esse mollitia ratione quos corporis vitae doloribus voluptatibus vel aperiam, inventore fugiat provident est nihil, cum quam totam! Consequatur, voluptatum blanditiis.</p>
+                            <p className="kb-content-left">This project was created because, I didn't have a quick and easy way to get detailed information of covid 19 statistics of my native state of Karnataka, India. This site is Built with Reactjs and gets the data from an open source API from covid19india.org. <br/><br />Made with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <Link className="kb-link-logo" to="">here.</Link> <br /> The link to the github repository is <Link className="kb-link-logo" to="">here.</Link> </p>
                         </div>
                         <img className="kb-img img2" src={img1} alt="covid19karnataka"></img>
                         <div className="project2">
                             <p class="kb-header-small-non-center">YEET</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi esse mollitia ratione quos corporis vitae doloribus voluptatibus vel aperiam, inventore fugiat provident est nihil, cum quam totam! Consequatur, voluptatum blanditiis.</p>
+                            <p className="kb-content-left">This project was created for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Made with: HTML5, CSS3, Javascript for client side, Django for server side.
+                            <br />
+                            <br />
+                            You can view the site <Link className="kb-link-logo" to="">here.</Link>
+                            </p>
                         </div>
                 </motion.div>
+                <motion.p className="kb-gh-link kb-content-center">Check out my github account for more projects. <Link className="kb-link-logo" to="">Here's the link to my github account.</Link></motion.p>
                 <div className="kb-skills-text">
                 <motion.div
                      initial={{ opacity: 0, y: 20 }}

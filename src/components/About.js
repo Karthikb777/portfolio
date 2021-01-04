@@ -6,21 +6,16 @@ import { motion } from 'framer-motion';
 
 
 function About() {
-    const [position, setPosition] = useState(0);
-    const handleScroll = () => {
-        const p = window.pageYOffset;
-        setPosition(p);
-    }
+    // const [position, setPosition] = useState(0);
+    // const handleScroll = () => {
+    //     const p = window.pageYOffset;
+    //     setPosition(p);
+    // }
 
     useEffect(() => {
-        window.addEventListener( 'scroll', handleScroll );
-        return () => {
-            window.removeEventListener( 'scroll', handleScroll );
-            // use this to animate elements in about page 
+            window.scrollTo(0, 0)
         }
-    });
-
-    console.log(position);
+    );
 
     return(
 

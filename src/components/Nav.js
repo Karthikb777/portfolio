@@ -32,6 +32,7 @@ function Nav() {
                 <motion.li id="li-contact" className="navElement"><Link className='kb-link-menu' to='/contact' onClick={() => setIsOpen(!isOpen)}>Contact Me</Link></motion.li>
                 {/* <!-- <li className="navElement copyRight">Copyright 2020-21 | Karthik HK</li> --> */}
             </motion.ul>
+            
         </>
     );
 }
