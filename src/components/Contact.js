@@ -1,12 +1,55 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 function Contact() {
+    const [success, setSuccess] = useState('Submit');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [msg, setMsg] = useState('');
 
     useEffect(() => {
         window.scrollTo(0, 0)
       }, []);
+
+      const handleChange = (event) => {
+          switch(event.target.name) {
+              case "name": setName(event.target.value);
+              break;
+              case "email": setEmail(event.target.value);
+              break;
+              case "message": setMsg(event.target.value);
+              break;
+              default:
+                  break;
+          }
+      }
+
+      const handleSubmit =(event) => {
+          event.preventDefault();
+          const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+            name: name,
+            email: email,
+            msg: msg,
+        })};
+
+        fetch('http://localhost:8080/api/contact', requestOptions)
+            .then(response => response.json())
+            .then(data => setSuccess('Message sent successfully!'))
+            .then(() => {
+                setName('');
+                setEmail('');
+                setMsg('');
+            }
+            )
+            .catch(err => console.log(err));
+        //   console.log(name, email, msg);
+      }
+
+    // console.log(name, email, msg);
 
     return(
         <>
@@ -128,26 +171,38 @@ function Contact() {
             </motion.div>
             
             <motion.form
+            onSubmit={handleSubmit}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5 }}
             className="kb-form" action="#" method="post">
-            <p class="kb-contact-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ullam at adipisci sit illo et minus quo numquam eveniet molestias fugiat illum asperiores tempora deleniti, velit ea labore esse cumque?</p>
+            <p class="kb-contact-center">Get in touch - let's work together. <br /> Got a project? Any other suggestions? Feel free to drop me a message.</p>
 
-                <input type="text" name="Name" id="Name" placeholder="Name" />
-                <input type="email" name="email" id="email" placeholder="Email" />
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" ></textarea>
-                <input type="submit" value="SUBMIT" />
+                <input type="text" onChange={handleChange} name="name" id="Name" placeholder="Name" />
+                <input type="email" onChange={handleChange} name="email" id="email" placeholder="Email" />
+                <textarea name="message" onChange={handleChange} id="message" cols="30" rows="10" placeholder="Message" ></textarea>
+                {/* <input type="submit" value="SUBMIT" /> */}
+                <input type="submit" value={success} />
+                {/* <p className="msg">{success}</p> */}
             </motion.form>
             </div>
-            <div className="kb-social-links">
+            <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.8 }}
+            className="kb-social-links">
                 <p>Social links</p>
-            <ul className="kb-social">
+            <motion.ul
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.8 }}
+            className="kb-social">
                 <li classname="kb-icon"><a target="_blank" rel="noreferrer" className="kb-link" href="https://github.com/Karthikb777">GITHUB</a></li>
                 <li classname="kb-icon"><a target="_blank" rel="noreferrer" className="kb-link" href="https://www.linkedin.com/in/karthik-hk">LINKEDIN</a></li>
                 <li classname="kb-icon"><a target="_blank" rel="noreferrer" className="kb-link" href="https://www.instagram.com/karthikbaraati/">INSTAGRAM</a></li>
-            </ul>
-            </div>
+                <li classname="kb-icon"><a target="_blank" rel="noreferrer" className="kb-link" href="mailto:karthik.barati.777@gmail.com">EMAIL</a></li>
+            </motion.ul>
+            </motion.div>
             
             </div>
             </motion.div>

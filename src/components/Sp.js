@@ -4,6 +4,7 @@ import {
     Link
   } from 'react-router-dom';
 import img1 from './img/covid19karLightScCropped.png';
+import img2 from './img/yeet.png';
 
 function Sp() {
 
@@ -110,7 +111,7 @@ function Sp() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.4 }}
-                class="kb-content-center">My specialization is Full Stack Development. I use HTML5, CSS3, Javascript, React, Python and Django the most and I'm capable of developing production ready code. I have learnt and used the other technologies like Nodejs and express for server side in small Projects, and I have also worked in Golang and Flutter.</motion.p>
+                class="kb-content-center">My specialization is Full Stack Development. I'm also really proficient in Python. I use HTML5, CSS3, Javascript, React, Python and Django the most, and I'm capable of developing production ready code. I have learnt and used the other technologies like Nodejs and express for server side in small Projects, and I have also worked in Golang and Flutter.</motion.p>
                 {/* <hr /> */}
                 <motion.h3
                 initial={{ opacity: 0, y: 20 }}
@@ -124,20 +125,20 @@ function Sp() {
                 class="kb-projects">
                         <img className="kb-img img1" src={img1} alt="covid19karnataka"></img>
                         <div className="project1">
-                            <p class="kb-header-small-non-center">COVID19KARNATAKA</p>
-                            <p className="kb-content-left">This project was created because, I didn't have a quick and easy way to get detailed information of covid 19 statistics of my native state of Karnataka, India. This site is Built with Reactjs and gets the data from an open source API from covid19india.org. <br/><br />Made with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <Link className="kb-link-logo" to="">here.</Link> <br /> The link to the github repository is <Link className="kb-link-logo" to="">here.</Link> </p>
+                            <p class="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">COVID19KARNATAKA</a></p>
+                            <p className="kb-content-left">This project was created because, I didn't have a quick and easy way to get detailed information of covid 19 statistics of my native state of Karnataka, India. This site is Built with Reactjs and gets the data from an open source API from covid19india.org. <br/><br />Made with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">here.</a> <br /> The link to the github repository is <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/covid19karnataka/">here.</a> </p>
                         </div>
-                        <img className="kb-img img2" src={img1} alt="covid19karnataka"></img>
+                        <img className="kb-img img2" src={img2} alt="yeet"></img>
                         <div className="project2">
-                            <p class="kb-header-small-non-center">YEET</p>
+                            <p class="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">YEET</a></p>
                             <p className="kb-content-left">This project was created for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Made with: HTML5, CSS3, Javascript for client side, Django for server side.
                             <br />
                             <br />
-                            You can view the site <Link className="kb-link-logo" to="">here.</Link>
+                            You can view the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">here.</a>
                             </p>
                         </div>
                 </motion.div>
-                <motion.p className="kb-gh-link kb-content-center">Check out my github account for more projects. <Link className="kb-link-logo" to="">Here's the link to my github account.</Link></motion.p>
+                <motion.p className="kb-gh-link kb-content-center">Check out my github account for more projects. <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/">Here's the link to my github account.</a></motion.p>
                 <div className="kb-skills-text">
                 <motion.div
                      initial={{ opacity: 0, y: 20 }}
