@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import {
     Link
   } from 'react-router-dom';
@@ -186,7 +186,7 @@ function About() {
                      initial={{ opacity: 0, y: 20 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ delay: 1.6 }}
-                     className="kb-about-sp"><Link className='kb-link kb-nxtpg' to='/skills-projects'>View Skills & projects {'>'} </Link></motion.div>
+                     className="kb-about-sp"><Link className='kb-link kb-nxtpg' to='/portfolio/skills-projects'>View Skills & projects {'>'} </Link></motion.div>
 
                  </div> 
                  </div> 

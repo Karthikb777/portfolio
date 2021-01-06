@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function Contact() {
     const [success, setSuccess] = useState('Submit');
@@ -36,7 +36,7 @@ function Contact() {
             msg: msg,
         })};
 
-        fetch('http://localhost:8080/api/contact', requestOptions)
+        fetch('https://kb-pf.herokuapp.com/api/contact', requestOptions)
             .then(response => response.json())
             .then(data => setSuccess('Message sent successfully!'))
             .then(() => {
@@ -57,12 +57,12 @@ function Contact() {
              animate={{ x: 0 }}
              transition={{ duration: 0.6 }}
              className="kb-contact">
-            <div class="wrapper wrapper-contact">
+            <div className="wrapper wrapper-contact">
             <motion.h3
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1 }}
-            class="kb-header-small">CONTACT ME</motion.h3>
+            className="kb-header-small">CONTACT ME</motion.h3>
             {/* <svg className="kb-contact-bg" width="852" height="1052" viewBox="0 0 672 452" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path id="Rectangle 1" d="M0 0H1129V452H0V0Z" fill="#223471" fill-opacity="0.8"/>
 </svg> */}
@@ -176,7 +176,7 @@ function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5 }}
             className="kb-form" action="#" method="post">
-            <p class="kb-contact-center">Get in touch - let's work together. <br /> Got a project? Any other suggestions? Feel free to drop me a message.</p>
+            <p className="kb-contact-center">Get in touch - let's work together. <br /> Got a project? Any other suggestions? Feel free to drop me a message.</p>
 
                 <input type="text" onChange={handleChange} name="name" id="Name" placeholder="Name" />
                 <input type="email" onChange={handleChange} name="email" id="email" placeholder="Email" />

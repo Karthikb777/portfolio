@@ -71,9 +71,9 @@ function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.9 }}
                 className="kb-cta-btn">
-                    <div className="kb-cta"><Link to='/about' className='kb-link'>Read about me</Link></div>
+                    <div className="kb-cta"><Link to='/portfolio/about' className='kb-link'>Read about me</Link></div>
                     <div className="kb-cta-sm">or</div>
-                    <div className="kb-cta"><Link to='/skills-projects' className='kb-link'>View projects</Link></div>
+                    <div className="kb-cta"><Link to='/portfolio/skills-projects' className='kb-link'>View projects</Link></div>
                 </motion.div>
             </div>
         </section>

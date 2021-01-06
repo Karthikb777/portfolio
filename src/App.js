@@ -16,16 +16,16 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/portfolio'>
           <Home />
         </Route>
-        <Route exact path='/about'>
+        <Route exact path='/portfolio/about'>
           <About />
         </Route>
-        <Route exact path='/skills-projects'>
+        <Route exact path='/portfolio/skills-projects'>
           <Sp />
         </Route>
-        <Route exact path='/contact'>
+        <Route exact path='/portfolio/contact'>
           <Contact />
         </Route>
       </Switch>

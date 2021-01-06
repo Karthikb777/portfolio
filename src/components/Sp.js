@@ -18,7 +18,7 @@ function Sp() {
              animate={{ x: 0 }}
              transition={{ duration: 0.6 }}
              className="kb-sp">
-            <div class="wrapper">
+            <div className="wrapper">
                 {/* <!-- <h3 class="kb-header-small">SKILLS AND PROJECTS</h3> */}
 
                 {/* <p class="kb-header-align-center">UI designer and full stack web developer</p> */}
@@ -28,101 +28,101 @@ function Sp() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.2 }}
-                class="kb-header-small">MY SKILLS</motion.h3>
+                className="kb-header-small">MY SKILLS</motion.h3>
                 <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.3 }}
-                class="kb-skills-text">HTML5 <span class="kb-divider">/</span> CSS3 <span class="kb-divider">/</span> JAVASCRIPT <span class="kb-divider">/</span> NODEJS <span class="kb-divider">/</span> REACT <span class="kb-divider">/</span> PYTHON <span class="kb-divider">/</span> DJANGO <span class="kb-divider">/</span> JAVA <span class="kb-divider">/</span> EXPRESS <span class="kb-divider">/</span> BOOTSTRAP</motion.p>
+                className="kb-skills-text">HTML5 <span className="kb-divider">/</span> CSS3 <span className="kb-divider">/</span> JAVASCRIPT <span className="kb-divider">/</span> NODEJS <span className="kb-divider">/</span> REACT <span className="kb-divider">/</span> PYTHON <span className="kb-divider">/</span> DJANGO <span className="kb-divider">/</span> JAVA <span className="kb-divider">/</span> EXPRESS <span className="kb-divider">/</span> BOOTSTRAP</motion.p>
 
-                <div class="kb-skills">
+                <div className="kb-skills">
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:1.4}}
-                    class="kb-skills-skill">
-                        <i class="devicon-html5-plain-wordmark kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-html5-plain-wordmark kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:1.5}}
-                    class="kb-skills-skill">
-                        <i class="devicon-css3-plain-wordmark kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-css3-plain-wordmark kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:1.6}}
-                    class="kb-skills-skill">
-                        <i class="devicon-javascript-plain kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-javascript-plain kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:1.7}}
-                    class="kb-skills-skill">
-                        <i class="devicon-nodejs-plain kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-nodejs-plain kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:1.8}}
-                    class="kb-skills-skill">
-                        <i class="devicon-react-original kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-react-original kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:1.9}}
-                    class="kb-skills-skill">
-                        <i class="devicon-python-plain kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-python-plain kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:2}}
-                    class="kb-skills-skill">
-                        <i class="devicon-django-plain-wordmark kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-django-plain-wordmark kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:2.1}}
-                    class="kb-skills-skill">
-                        <i class="devicon-java-plain kb-colored"></i> 
+                    className="kb-skills-skill">
+                        <i className="devicon-java-plain kb-colored"></i> 
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:2.2}}
-                    class="kb-skills-skill">
-                        <i class="devicon-express-original kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-express-original kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:2.3}}
-                    class="kb-skills-skill">
-                        <i class="devicon-bootstrap-plain kb-colored"></i>
+                    className="kb-skills-skill">
+                        <i className="devicon-bootstrap-plain kb-colored"></i>
                     </motion.div> 
                 </div>
                 <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.4 }}
-                class="kb-content-center">My specialization is Full Stack Development. I'm also really proficient in Python. I use HTML5, CSS3, Javascript, React, Python and Django the most, and I'm capable of developing production ready code. I have learnt and used the other technologies like Nodejs and express for server side in small Projects, and I have also worked in Golang and Flutter.</motion.p>
+                className="kb-content-center">My specialization is Full Stack Development. I'm also really proficient in Python. I use HTML5, CSS3, Javascript, React, Python and Django the most, and I'm capable of developing production ready code. I have learnt and used the other technologies like Nodejs and express for server side in small Projects, and I have also worked in Golang and Flutter.</motion.p>
                 {/* <hr /> */}
                 <motion.h3
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.5 }}
-                class="kb-header-small">PROMINENT PROJECTS</motion.h3>
+                className="kb-header-small">PROMINENT PROJECTS</motion.h3>
                 <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.6 }}
-                class="kb-projects">
+                className="kb-projects">
                         <img className="kb-img img1" src={img1} alt="covid19karnataka"></img>
                         <div className="project1">
                             <p class="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">COVID19KARNATAKA</a></p>
@@ -130,7 +130,7 @@ function Sp() {
                         </div>
                         <img className="kb-img img2" src={img2} alt="yeet"></img>
                         <div className="project2">
-                            <p class="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">YEET</a></p>
+                            <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">YEET</a></p>
                             <p className="kb-content-left">This project was created for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Made with: HTML5, CSS3, Javascript for client side, Django for server side.
                             <br />
                             <br />
@@ -144,7 +144,7 @@ function Sp() {
                      initial={{ opacity: 0, y: 20 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ delay: 2.7 }}
-                     className=""><Link className='kb-link kb-nxtpg' to='/contact'>Get in touch {'>'} </Link></motion.div>
+                     className=""><Link className='kb-link kb-nxtpg' to='/portfolio/contact'>Get in touch {'>'} </Link></motion.div>
             </div></div>
             </motion.div>
         </>
