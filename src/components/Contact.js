@@ -178,9 +178,9 @@ function Contact() {
             className="kb-form" action="#" method="post">
             <p className="kb-contact-center">Get in touch - let's work together. <br /> Got a project? Any other suggestions? Feel free to drop me a message.</p>
 
-                <input type="text" onChange={handleChange} name="name" id="Name" placeholder="Name" />
-                <input type="email" onChange={handleChange} name="email" id="email" placeholder="Email" />
-                <textarea name="message" onChange={handleChange} id="message" cols="30" rows="10" placeholder="Message" ></textarea>
+                <input type="text" required onChange={handleChange} name="name" id="Name" placeholder="Name" />
+                <input type="email" required onChange={handleChange} name="email" id="email" placeholder="Email" />
+                <textarea name="message" required onChange={handleChange} id="message" cols="30" rows="10" placeholder="Message" ></textarea>
                 {/* <input type="submit" value="SUBMIT" /> */}
                 <input type="submit" value={success} />
                 {/* <p className="msg">{success}</p> */}
