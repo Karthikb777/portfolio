@@ -370,7 +370,7 @@
     margin: 30px 20px;
     margin-bottom: 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 1fr 1fr 10%;
 }
 
