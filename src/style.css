@@ -293,9 +293,9 @@
     z-index: 2;
     font-size: 17px;
     letter-spacing: 3px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 450;
-    color: grey;
+    color: black;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -305,17 +305,17 @@
     letter-spacing: 3px;
     /* text-align: center; */
     font-weight: 450;
-    color: grey;
+    color: black;
     padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .kb-header-align-center {
     z-index: 2;
-    font-size: 45px;
+    font-size: 40px;
     /* line-height: 50px; */
     font-weight: bolder;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .wrapper {
@@ -323,25 +323,26 @@
     padding-bottom: 8%;
     /* padding-left: 5%;
     padding-right: 5%; */
-    width: 96%;
+    max-width: 80%;
     margin: auto;
     align-self: center;
 }
 
-.kb-header-clr-blk {
+/* .kb-header-clr-blk {
     color: black;
-}
+} */
 
 .kb-content {
     z-index: 2;
-    width: 75%;
+    width: 80%;
+    font-size: 18px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     padding: 25px 0px;
     font-weight: 550;
     color: grey;
-    text-align: center;
+    /* text-align: center; */
     
 }
 
@@ -349,12 +350,12 @@
     padding: 25px 0px;
     font-weight: 550;
     color: grey;
-    text-align: center;
+    /* text-align: center; */
     
 }
 
 .kb-content-left {
-    padding: 25px 0px;
+    padding: 15px 0px;
     font-weight: 550;
     color: grey;
     /* text-align: center; */
@@ -396,7 +397,7 @@
     grid-column: 1/5;
     grid-row: 3/4;
     align-self: center;
-    justify-self: center;
+    /* justify-self: center; */
     
 }
 
@@ -441,10 +442,10 @@
     color: rgba(0, 0, 0, 0.8);
 }
 
-.kb-skills-skill:hover {
-    /* animation: clrChange 0.3s ease-in forwards; */
+/* .kb-skills-skill:hover {
+    animation: clrChange 0.3s ease-in forwards;
     cursor: pointer;
-}
+} */
 
 @keyframes clrChange {
     from {
@@ -473,8 +474,8 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 2%;
-    column-gap: 2%;
+    row-gap: 5%;
+    column-gap: 5%;
     padding-bottom: 100px;
     padding-top: 50px;
 }
@@ -486,7 +487,7 @@
 
 .img2 {
     grid-row: 2/3;
-    grid-column: 2/3;
+    grid-column: 1/2;
 }
 
 .kb-img {
