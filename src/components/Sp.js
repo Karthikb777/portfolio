@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import img1 from './img/covid19karLightScCropped.png';
+import img1 from './img/covidTracker.png';
 import img2 from './img/yeet.png';
+import img3 from './img/noteIt.png';
 
 function Sp() {
 
@@ -11,7 +12,15 @@ function Sp() {
       }, []);
 
     return(
-        <>
+        <motion.div
+        // style={{
+        //     // backgroundColor: "#878787"
+        //     backgroundColor: "#4287f6"
+        // }}
+        // initial={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
+        // animate={{ backgroundColor: "#4287f6" }}
+        // transition={{ delay: 1.6 }}
+        >
             <motion.div initial={{ x: '100vw' }}
              animate={{ x: 0 }}
              transition={{ duration: 0.6 }}
@@ -31,7 +40,7 @@ function Sp() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.3 }}
-                className="kb-skills-text">HTML5 <span className="kb-divider">/</span> CSS3 <span className="kb-divider">/</span> JAVASCRIPT <span className="kb-divider">/</span> NODEJS <span className="kb-divider">/</span> REACT <span className="kb-divider">/</span> PYTHON <span className="kb-divider">/</span> DJANGO <span className="kb-divider">/</span> JAVA <span className="kb-divider">/</span> EXPRESS <span className="kb-divider">/</span> BOOTSTRAP</motion.p>
+                className="kb-skills-text">HTML5 <span className="kb-divider">/</span> CSS3 <span className="kb-divider">/</span> JAVASCRIPT <span className="kb-divider">/</span> NODEJS <span className="kb-divider">/</span> REACT <span className="kb-divider">/</span> PYTHON <span className="kb-divider">/</span> DJANGO <span className="kb-divider">/</span> JAVA <span className="kb-divider">/</span> KOTLIN <span className="kb-divider">/</span> ANDROID</motion.p>
 
                 <div className="kb-skills">
                     <motion.div
@@ -95,21 +104,21 @@ function Sp() {
                     animate={{opacity: 1}}
                     transition={{delay:2.2}}
                     className="kb-skills-skill">
-                        <i className="devicon-express-original kb-colored"></i>
+                        <i className="devicon-kotlin-plain kb-colored"></i>
                     </motion.div>
                     <motion.div
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{delay:2.3}}
                     className="kb-skills-skill">
-                        <i className="devicon-bootstrap-plain kb-colored"></i>
+                        <i className="devicon-android-plain kb-colored"></i>
                     </motion.div> 
                 </div>
                 <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.4 }}
-                className="kb-content-center">My specialization is Full Stack Development. I'm also really proficient in Python. I use HTML5, CSS3, Javascript, React, Python and Django the most, and I'm capable of developing production ready code. I have learnt and used the other technologies like Nodejs and express for server side in small Projects, and I have also worked in Golang and Flutter.</motion.p>
+                className="kb-content-center">My specialization is Full stack web and android app development. I'm also really proficient in Python. I use HTML5, CSS3, Javascript, React, Python, Django and android the most, and I'm capable of developing production ready code. I have learnt and used the other technologies like Nodejs and express for server side in small Projects, and I have also worked in Golang and Flutter.</motion.p>
                 {/* <hr /> */}
                 <motion.h3
                 initial={{ opacity: 0, y: 20 }}
@@ -121,19 +130,34 @@ function Sp() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 2.6 }}
                 className="kb-projects">
-                        <img className="kb-img img1" src={img1} alt="covid19karnataka"></img>
-                        <div className="project1">
-                            <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">COVID19KARNATAKA</a></p>
-                            <p className="kb-content-left">This project was created because, I didn't have a quick and easy way to get detailed information of covid 19 statistics of my native state of Karnataka, India. This site is Built with Reactjs and gets the data from an open source API from covid19india.org. <br/><br />Made with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">here.</a> <br /> The link to the github repository is <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/covid19karnataka/">here.</a> </p>
+                        
+                        <img className="kb-img img1" src={img3} alt="note it"></img>
+                        <div className="project3">
+                            <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">NOTE IT</a></p>
+                            <p className="kb-content-left">A simple, fully offline, note taking and task management app for android. <br /><br /> Built with: Kotlin and Android studio.
+                            <br />
+                            <br />
+                            The link to the github repository is <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://github.com/Karthikb777/Note-it">here.</a>
+                            <br />
+
+                            You can download the app <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://github.com/Karthikb777/Note-it/releases/tag/v1.0">here.</a>
+                            </p>
                         </div>
+
                         <img className="kb-img img2" src={img2} alt="yeet"></img>
                         <div className="project2">
                             <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">YEET</a></p>
-                            <p className="kb-content-left">This project was created for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Made with: HTML5, CSS3, Javascript for client side, Django for server side.
+                            <p className="kb-content-left">A website for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Built with: HTML5, CSS3, Javascript for client side, Django for server side.
                             <br />
                             <br />
                             You can view the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">here.</a>
                             </p>
+                        </div>
+                        
+                        <img className="kb-img img3" src={img1} alt="covid19karnataka"></img>
+                        <div className="project1">
+                            <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">COVID19KARNATAKA</a></p>
+                            <p className="kb-content-left">A website to provide a quick and easy way to get detailed information of covid 19 statistics of the state of Karnataka, India. Built with Reactjs and the data from an open source API from covid19india.org. <br/><br />Built with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">here.</a> <br /> The link to the github repository is <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/covid19karnataka/">here.</a> </p>
                         </div>
                 </motion.div>
                 <motion.p className="kb-gh-link kb-content-center">Check out my github account for more projects. <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/">Here's the link to my github account.</a></motion.p>
@@ -141,10 +165,11 @@ function Sp() {
                      initial={{ opacity: 0, y: 20 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ delay: 2.7 }}
-                     className=""><Link className='kb-link kb-nxtpg' to='/portfolio/contact'>Get in touch {'>'} </Link></motion.div>
+                     className=""><Link className='kb-link kb-nxtpg' to='/portfolio/contact'>Get in touch</Link></motion.div>
             </div>
             </motion.div>
-        </>
+        </motion.div>
+        
     );
 }
 

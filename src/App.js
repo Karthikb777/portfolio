@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import './style.css';
 
 function App() {
+
   return (
     <Router>
       <Nav />

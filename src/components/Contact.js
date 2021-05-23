@@ -52,15 +52,23 @@ function Contact() {
     // console.log(name, email, msg);
 
     return(
-        <>
+        <motion.div
+        // make the bg fade in and out during transitions
+        // style={{
+        //     backgroundColor: "#30dd81"
+        // }}
+        // initial={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
+        // animate={{ backgroundColor: "#30dd81" }}
+        // transition={{ delay: 1.2 }}
+        >
             <motion.div initial={{ x: '100vw' }}
              animate={{ x: 0 }}
              transition={{ duration: 0.6 }}
              className="kb-contact">
             <div className="wrapper wrapper-contact">
             <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1.1 }}
             className="kb-header-small">CONTACT ME</motion.h3>
             {/* <svg className="kb-contact-bg" width="852" height="1052" viewBox="0 0 672 452" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +214,7 @@ function Contact() {
             
             </div>
             </motion.div>
-        </>
+            </motion.div>
     );
 }
 
