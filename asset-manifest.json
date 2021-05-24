@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5a6d1a8a.chunk.css",
-    "main.js": "/portfolio/static/js/main.f6c7adb0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f6c7adb0.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.27fd6dd1.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.27fd6dd1.js.map",
-    "static/js/2.258eb124.chunk.js": "/portfolio/static/js/2.258eb124.chunk.js",
-    "static/js/2.258eb124.chunk.js.map": "/portfolio/static/js/2.258eb124.chunk.js.map",
-    "static/js/3.57a07549.chunk.js": "/portfolio/static/js/3.57a07549.chunk.js",
-    "static/js/3.57a07549.chunk.js.map": "/portfolio/static/js/3.57a07549.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/main.5a6d1a8a.chunk.css.map": "/portfolio/static/css/main.5a6d1a8a.chunk.css.map",
-    "static/js/2.258eb124.chunk.js.LICENSE.txt": "/portfolio/static/js/2.258eb124.chunk.js.LICENSE.txt",
-    "static/media/covid19karLightScCropped.7a37e97b.png": "/portfolio/static/media/covid19karLightScCropped.7a37e97b.png",
-    "static/media/yeet.d94af88c.png": "/portfolio/static/media/yeet.d94af88c.png"
+    "main.css": "/static/css/main.9a4d0cfa.chunk.css",
+    "main.js": "/static/js/main.11b49400.chunk.js",
+    "main.js.map": "/static/js/main.11b49400.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3916ece6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3916ece6.js.map",
+    "static/js/2.258eb124.chunk.js": "/static/js/2.258eb124.chunk.js",
+    "static/js/2.258eb124.chunk.js.map": "/static/js/2.258eb124.chunk.js.map",
+    "static/js/3.57a07549.chunk.js": "/static/js/3.57a07549.chunk.js",
+    "static/js/3.57a07549.chunk.js.map": "/static/js/3.57a07549.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9a4d0cfa.chunk.css.map": "/static/css/main.9a4d0cfa.chunk.css.map",
+    "static/js/2.258eb124.chunk.js.LICENSE.txt": "/static/js/2.258eb124.chunk.js.LICENSE.txt",
+    "static/media/covidTracker.3efc6189.png": "/static/media/covidTracker.3efc6189.png",
+    "static/media/noteIt.e5ce1c45.png": "/static/media/noteIt.e5ce1c45.png",
+    "static/media/yeet.d94af88c.png": "/static/media/yeet.d94af88c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.27fd6dd1.js",
+    "static/js/runtime-main.3916ece6.js",
     "static/js/2.258eb124.chunk.js",
-    "static/css/main.5a6d1a8a.chunk.css",
-    "static/js/main.f6c7adb0.chunk.js"
+    "static/css/main.9a4d0cfa.chunk.css",
+    "static/js/main.11b49400.chunk.js"
   ]
 }
