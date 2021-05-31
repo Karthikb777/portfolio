@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Sp from './components/Sp';
 import Contact from './components/Contact';
+import ContactAlt from './components/ContactAlternate';
 import Footer from './components/Footer';
 import './style.css';
 
@@ -27,7 +28,7 @@ function App() {
           <Sp />
         </Route>
         <Route exact path='/portfolio/contact'>
-          <Contact />
+          <ContactAlt />
         </Route>
       </Switch>
       {/* <Footer /> */}
