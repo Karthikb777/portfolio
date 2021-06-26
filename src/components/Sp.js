@@ -134,7 +134,7 @@ function Sp() {
                         <img className="kb-img img1" src={img3} alt="note it"></img>
                         <div className="project3">
                             <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">NOTE IT</a></p>
-                            <p className="kb-content-left">A simple, fully offline, note taking and task management app for android. <br /><br /> Built with: Kotlin and Android studio.
+                            <p className="kb-content-left">Developed a simple, fully offline, note taking and task management app for android. <br /><br /> Built with: Kotlin and Android studio.
                             <br />
                             <br />
                             The link to the github repository is <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://github.com/Karthikb777/Note-it">here.</a>
@@ -144,10 +144,10 @@ function Sp() {
                             </p>
                         </div>
 
-                        <img className="kb-img img2" src={img2} alt="yeet"></img>
+                        <img className="kb-img img2" src={img2} alt="KIT hub"></img>
                         <div className="project2">
-                            <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">YEET</a></p>
-                            <p className="kb-content-left">A website for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Built with: HTML5, CSS3, Javascript for client side, Django for server side.
+                            <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">KIT HUB</a></p>
+                            <p className="kb-content-left">Designed and developed a website for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Built with: HTML5, CSS3, Javascript for client side, Django for server side.
                             <br />
                             <br />
                             You can view the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">here.</a>
@@ -157,7 +157,7 @@ function Sp() {
                         <img className="kb-img img3" src={img1} alt="covid19karnataka"></img>
                         <div className="project1">
                             <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">COVID19KARNATAKA</a></p>
-                            <p className="kb-content-left">A website to provide a quick and easy way to get detailed information of covid 19 statistics of the state of Karnataka, India. Built with Reactjs and the data from an open source API from covid19india.org. <br/><br />Built with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">here.</a> <br /> The link to the github repository is <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/covid19karnataka/">here.</a> </p>
+                            <p className="kb-content-left">Designed and developed a website to provide a quick and easy way to get detailed information of covid 19 statistics of the state of Karnataka, India. Built with Reactjs and the data from an open source API from covid19india.org. <br/><br />Built with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">here.</a> <br /> The link to the github repository is <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/covid19karnataka/">here.</a> </p>
                         </div>
                 </motion.div>
                 <motion.p className="kb-gh-link kb-content-center">Check out my github account for more projects. <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/">Here's the link to my github account.</a></motion.p>
