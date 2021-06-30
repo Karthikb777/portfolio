@@ -521,6 +521,11 @@
     grid-column: 1/2;
 }
 
+.img4 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+}
+
 .kb-img {
     width: 600px;
     height: 300px;

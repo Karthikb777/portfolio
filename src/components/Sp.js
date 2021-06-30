@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import img1 from './img/covidTracker.png';
 import img2 from './img/yeet.png';
 import img3 from './img/noteIt.png';
+import img4 from './img/pathfinder.png';
 
 function Sp() {
 
@@ -131,7 +132,22 @@ function Sp() {
                 transition={{ delay: 2.6 }}
                 className="kb-projects">
                         
-                        <img className="kb-img img1" src={img3} alt="note it"></img>
+                        <img className="kb-img img1" src={img4} alt="pathfinder"></img>
+                        <div className="project3">
+                            <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/Pathfinder/">PATHFINDER</a></p>
+                            <p className="kb-content-left">Algorithm visualizer built to visualize different pathfinding algorithms like
+                                Dijkstra's algorithm, BFS and DFS. Built with ReactJS.
+                                <br /><br /> Built with: ReactJS.
+                            <br />
+                            <br />
+                            The link to the github repository is <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://github.com/Karthikb777/Pathfinder">here.</a>
+                            <br/>
+                            You can check out the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/Pathfinder/">here.</a>
+
+                            </p>
+                        </div>
+
+                        <img className="kb-img img2" src={img3} alt="note it"></img>
                         <div className="project3">
                             <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">NOTE IT</a></p>
                             <p className="kb-content-left">Developed a simple, fully offline, note taking and task management app for android. <br /><br /> Built with: Kotlin and Android studio.
@@ -144,7 +160,7 @@ function Sp() {
                             </p>
                         </div>
 
-                        <img className="kb-img img2" src={img2} alt="KIT hub"></img>
+                        <img className="kb-img img3" src={img2} alt="KIT hub"></img>
                         <div className="project2">
                             <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://kitcclub.herokuapp.com/">KIT HUB</a></p>
                             <p className="kb-content-left">Designed and developed a website for students to download class notes and for teachers to upload their notes in a single place, and also to overcome some of the shortcomings of the services used by the teachers to share class notes, observed during the online lecture period. <br /><br /> Built with: HTML5, CSS3, Javascript for client side, Django for server side.
@@ -154,11 +170,11 @@ function Sp() {
                             </p>
                         </div>
                         
-                        <img className="kb-img img3" src={img1} alt="covid19karnataka"></img>
+                        {/* <img className="kb-img img4" src={img1} alt="covid19karnataka"></img>
                         <div className="project1">
                             <p className="kb-header-small-non-center"><a className="kb-link" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">COVID19KARNATAKA</a></p>
                             <p className="kb-content-left">Designed and developed a website to provide a quick and easy way to get detailed information of covid 19 statistics of the state of Karnataka, India. Built with Reactjs and the data from an open source API from covid19india.org. <br/><br />Built with: HTML5, CSS3, Javascript and ReactJS.<br /><br /> You can check out the site <a className="kb-link-logo" target="_blank" rel="noreferrer" href="https://karthikb777.github.io/covid19karnataka/">here.</a> <br /> The link to the github repository is <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/covid19karnataka/">here.</a> </p>
-                        </div>
+                        </div> */}
                 </motion.div>
                 <motion.p className="kb-gh-link kb-content-center">Check out my github account for more projects. <a target="_blank" rel="noreferrer" className="kb-link-logo" href="https://github.com/Karthikb777/">Here's the link to my github account.</a></motion.p>
                 <motion.div
