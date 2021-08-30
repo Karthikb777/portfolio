@@ -4,14 +4,23 @@ import { motion } from 'framer-motion';
 
 
 function Home() {
+
+    const bgText = () => {
+        const { innerWidth: width } = window
+        if(width < 769) return <h3 className="kb-backgroundText dev1">DEV</h3>
+        else return <h3 className="kb-backgroundText dev1">DEVELOPER</h3>
+    }
+
     return(
         <>   
         <section className="kb-landingPage">
             <motion.div className="kb-landingPage-bg">
+                {/* replaced the css way of adjusting the bgtext to the react way of doing it */}
+                {bgText()}
             {/* <!-- <h3 className="kb-backgroundText kb-landingPage-bg">DEVELOPER</h3> --> */}
-                <h3 className="kb-backgroundText dev1">DEV</h3>
+                {/* <h3 className="kb-backgroundText dev1">DEV</h3>
                 <h3 className="kb-backgroundText dev2">ELO</h3>
-                <h3 className="kb-backgroundText dev3">PER</h3>
+                <h3 className="kb-backgroundText dev3">PER</h3> */}
             </motion.div>
             <div className="kb-headerGrp">
                 <motion.h3
