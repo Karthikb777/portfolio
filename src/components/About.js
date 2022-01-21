@@ -47,7 +47,7 @@ function About() {
                      initial={{ opacity: 0, y: 20 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ delay: 1.3 }}
-                     >Currently, I'm studying third year of Electronics and communication engineering. But, I've always been interested in computers and software. I learnt C++ in 2016, and it was the start of something beautiful and creative in my life. Since then, I have been coding and have developed many things, solving my problems, and also problems of others.</motion.p> <br/>
+                     >Currently, I'm studying fourth year of Electronics and communication engineering. But, I've always been interested in computers and software. I learnt C++ in 2016, and it was the start of something beautiful and creative in my life. Since then, I have been coding and have developed many things, solving my problems, and also problems of others.</motion.p> <br/>
                      <motion.p
                      initial={{ opacity: 0, y: 20 }}
                      animate={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ function About() {
                              {/* <!-- <p>It is often said that the character of a person can be seen by the stuff he uses.</p> --> */}
                              <p>
                                  The laptop that I use is an Asus ROG strix, which is designed for esports and peak Windows 10 gaming performance. I require this amount of performance to satisfy my graphic design and gaming needs. <br/><br/>
-                                 I use a Xiaomi Poco F1, which is a developer friendly device, which allows me to tinker with the phone's software and also allows me to test my apps.
+                                 I use a Xiaomi Poco M3, which is a developer friendly device, which allows me to tinker with the phone's software and also allows me to test my apps.
                              </p>
                              <br/>
                              <svg className="kb-gear-svg-mobile" width="287" height="182" viewBox="0 0 287 182" fill="none" xmlns="http://www.w3.org/2000/svg">
